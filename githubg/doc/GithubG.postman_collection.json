@@ -1,0 +1,726 @@
+{
+	"info": {
+		"_postman_id": "0a3f2fae-5573-4197-b6cb-a714919e44da",
+		"name": "GithubG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34741234"
+	},
+	"item": [
+		{
+			"name": "https://api.github.com/repos/sankarees/issues",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "s@nkar283533",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sankarees",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/repos/sankarees/playground/issues",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"sankarees",
+						"playground",
+						"issues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create issue",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "s@nkar283533",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sankarees",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/repos/sankarees/playground/issues",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"sankarees",
+						"playground",
+						"issues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRs",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "s@nkar283533",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sankarees",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/repos/sankarees/githubg/pulls/1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"sankarees",
+						"githubg",
+						"pulls",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRs valid pr",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "s@nkar283533",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sankarees",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owner\": \"sankarees\",\r\n    \"userName\": \"sankarees\",\r\n    \"repository\": \"test_repo_852024\",\r\n    \"prNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repository/operation/pr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repository",
+						"operation",
+						"pr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRs empty request",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "s@nkar283533",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sankarees",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owner\": \"\",\r\n    \"userName\": \"\",\r\n    \"repository\": \"\",\r\n    \"prNumber\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repository/operation/pr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repository",
+						"operation",
+						"pr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRs invalid username",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "s@nkar283533",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sankarees",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \" \",\r\n    \"repository\": \"githubg\",\r\n    \"prNumber\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repository/operation/pr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repository",
+						"operation",
+						"pr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRs invalid repository",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "s@nkar283533",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sankarees",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owner\": \"sankarees\",\r\n    \"userName\": \"sankarees\",\r\n    \"repository\": \" \",\r\n    \"prNumber\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repository/operation/pr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repository",
+						"operation",
+						"pr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PR create local",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "githubg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "githubg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "github_<replace your token>"
+					},
+					{
+						"key": "clientid",
+						"value": "6779ef20e75817b79602"
+					},
+					{
+						"key": "clientsecret",
+						"value": "902830e75817b79602"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owner\": \"sankarees\",\r\n    \"userName\": \"sankarees\",\r\n    \"repository\": \"test_repo_852024\",\r\n    \"pullRequest\": {\r\n        \"title\": \"PR sankar-test_repo_852024_1_release\",\r\n        \"body\": \"test_test_repo_852024_1_release bdy\",\r\n        \"head\": \"test_repo_852024_1\",\r\n        \"base\": \"main\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/repository/operation/pulls",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repository",
+						"operation",
+						"pulls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PR merge local",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "github_<replace your token>"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owner\": \"sankarees\",\r\n    \"userName\": \"sankarees\",\r\n    \"repository\": \"test_repo_852024\",\r\n    \"prNumber\": 3,\r\n    \"pullRequest\": {\r\n        \"title\": \"PR sankar-test_repo_852024_1_release\",\r\n        \"body\": \"test_test_repo_852024_1_release bdy\",\r\n        \"head\": \"test_repo_852024_1\",\r\n        \"base\": \"main\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/repository/operation/pulls/merge",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repository",
+						"operation",
+						"pulls",
+						"merge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PR create",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"PR sankar\",\r\n    \"body\": \"pull request content\",\r\n    \"head\": \"develop_init\",\r\n    \"base\": \"main\"\r\n  }"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/sankarees/githubg/pulls",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"sankarees",
+						"githubg",
+						"pulls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PR merge",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"PR sankar\",\r\n    \"body\": \"pull request content\",\r\n    \"head\": \"develop_init\",\r\n    \"base\": \"main\"\r\n  }"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/sankarees/githubg/pulls/4/merge",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"sankarees",
+						"githubg",
+						"pulls",
+						"4",
+						"merge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PR delete",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "github_<replace your token>",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer github_<replace your token>"
+					},
+					{
+						"key": "X-GitHub-Api-Version",
+						"value": "2022-11-28"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/repos/sankarees/githubg/pulls/1856334995",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"sankarees",
+						"githubg",
+						"pulls",
+						"1856334995"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

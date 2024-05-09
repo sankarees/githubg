@@ -18,36 +18,27 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.kohsuke/github-api -->
+		<!-- Swagger UI -->
 		<dependency>
-			<groupId>org.kohsuke</groupId>
-			<artifactId>github-api</artifactId>
-			<version>1.321</version>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.5.13</version>
 		</dependency>
-<!--		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
 		</dependency>
--->		<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 <!--		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web-services</artifactId>
-		</dependency>-->
-
-<!--		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
--->		</dependencies>
+-->	</dependencies>
 
 	<build>
 		<plugins>
